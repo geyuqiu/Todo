@@ -1,22 +1,133 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components';
+import {useTable} from 'react-table';
 
-function App() {
-    return (
-        <>
-            <h1>Docler FE Homework</h1>
-            <ul>
-                <li>Create the layout based on the designs at the bottom of the task's description</li>
-                <li>Make sure the layout looks great both on desktop and on mobile</li>
-                <li>Focus on good UX</li>
-                <li>Use React with TypeScript</li>
-                <li>Cover the functionality with tests</li>
-                <li>Get data for the list from <a href="https://jsonplaceholder.typicode.com/todos" target="_blank" rel="noopener noreferrer">https://jsonplaceholder.typicode.com/todos</a> using an asynchronous call</li>
-                <li>Pay attention to architecture and code organizing</li>
-                <li>Feel free to add new dependencies if you need anything</li>
-            </ul>
-        </>
-    );
+import makeData from './makeData'
+
+const Styles = styled.div`
+  padding: 1rem;
+
+  table {
+    border-spacing: 0;
+    border: 1px solid black;
+
+    tr {
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    th,
+    td {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
+`
+
+
+type Props = {
+	columns: any;
+	data: any;
 }
 
-export default App;
+function Table({columns, data}: Props) {
+	// Use the state and functions returned from useTable to build your UI
+	const {
+		getTableProps,
+		getTableBodyProps,
+		headerGroups,
+		rows,
+		prepareRow,
+	} = useTable({
+		columns,
+		data,
+	});
+
+	// Render the UI for your table
+	return (
+		<table {...getTableProps()}>
+			<thead>
+			{headerGroups.map((headerGroup: any) => (
+				<tr {...headerGroup.getHeaderGroupProps()}>
+					{headerGroup.headers.map((column: any) => (
+						<th {...column.getHeaderProps()}>{column.render('Header')}</th>
+					))}
+				</tr>
+			))}
+			</thead>
+			<tbody {...getTableBodyProps()}>
+			{rows.map((row: any, i: number) => {
+				prepareRow(row)
+				return (
+					<tr {...row.getRowProps()}>
+						{row.cells.map((cell: any) => {
+							return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+						})}
+					</tr>
+				)
+			})}
+			</tbody>
+		</table>
+	)
+}
+
+function App() {
+	const columns = React.useMemo(
+		() => [
+			{
+				Header: 'Name',
+				columns: [
+					{
+						Header: 'First Name',
+						accessor: 'firstName',
+					},
+					{
+						Header: 'Last Name',
+						accessor: 'lastName',
+					},
+				],
+			},
+			{
+				Header: 'Info',
+				columns: [
+					{
+						Header: 'Age',
+						accessor: 'age',
+					},
+					{
+						Header: 'Visits',
+						accessor: 'visits',
+					},
+					{
+						Header: 'Status',
+						accessor: 'status',
+					},
+					{
+						Header: 'Profile Progress',
+						accessor: 'progress',
+					},
+				],
+			},
+		],
+		[]
+	)
+
+	const data = React.useMemo(() => makeData(20), [])
+
+	return (
+		<Styles>
+			<Table columns={columns} data={data}/>
+		</Styles>
+	)
+}
+
+export default App
