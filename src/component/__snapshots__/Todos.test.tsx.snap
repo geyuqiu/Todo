@@ -10,6 +10,12 @@ exports[`WalletView should match snapshot 1`] = `
     >
       Todos
     </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+    </div>
     <p
       data-testid="Table__Loading"
     >

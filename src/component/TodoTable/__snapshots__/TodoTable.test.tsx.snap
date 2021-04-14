@@ -21,6 +21,12 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
     >
       Todos
     </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+    </div>
     <div
       class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
       role="table"
@@ -41,7 +47,6 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               role="columnheader"
             >
               #
-              <div />
             </th>
             <th
               class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -50,12 +55,6 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               role="columnheader"
             >
               Title
-              <div>
-                <input
-                  placeholder="keyword..."
-                  value=""
-                />
-              </div>
             </th>
             <th
               class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -64,25 +63,6 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               role="columnheader"
             >
               Completed
-              <div>
-                <select>
-                  <option
-                    value=""
-                  >
-                    -
-                  </option>
-                  <option
-                    value="true"
-                  >
-                    true
-                  </option>
-                  <option
-                    value="false"
-                  >
-                    false
-                  </option>
-                </select>
-              </div>
             </th>
           </tr>
         </thead>
@@ -234,6 +214,12 @@ exports[`TodoTable isLoading should match snapshot 1`] = `
     >
       Todos
     </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+    </div>
     <p
       data-testid="Table__Loading"
     >
@@ -253,6 +239,12 @@ exports[`TodoTable todos empty for selected address should match snapshot 1`] = 
     >
       Todos
     </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+    </div>
     <p
       class="bg-error p-4"
       data-testid="Table__No_Results"

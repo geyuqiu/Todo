@@ -1,9 +1,8 @@
-import React, {useMemo} from "react";
+import React, {useEffect, useMemo} from "react";
 import {TableOptions, useFilters, useTable} from "react-table";
 import {styled} from "twin.macro";
 
 import {tableStyle} from "./Table.styles";
-import {DefaultColumnFilter} from './filter/DefaultColumnFilter';
 import {NoResults} from '../TodoTable/TodoTable';
 
 type TableProps = {
@@ -12,13 +11,15 @@ type TableProps = {
 	data: any[];
 	columns: any[];
 	initialState?: Record<string, any>;
+	titleOutside?: string;
+	completedOutside?: boolean;
 };
 
 const TableWrapper = styled.div`
 	${tableStyle}
 `;
 
-export const Table = ({children, data, columns, className, initialState}: TableProps) => {
+export const Table = ({children, data, columns, className, initialState, titleOutside, completedOutside}: TableProps) => {
 	const filterTypes = React.useMemo(() => ({
 		text: (rows: any, id: any, filterValue: any) => {
 			return rows.filter((row: any) => {
@@ -32,14 +33,13 @@ export const Table = ({children, data, columns, className, initialState}: TableP
 		},
 	}), [])
 
-	const defaultColumn = React.useMemo(() => ({Filter: DefaultColumnFilter,}), [])
-
-	const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = useTable(
+	const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,
+		// @ts-ignore
+		setFilter} = useTable(
 		{
 			data: useMemo(() => data, [data]),
 			columns: useMemo(() => columns, [columns]),
 			initialState,
-			defaultColumn, // Be sure to pass the defaultColumn option
 			filterTypes
 		} as TableOptions<any>, useFilters
 	);
@@ -50,6 +50,11 @@ export const Table = ({children, data, columns, className, initialState}: TableP
 		}
 		return <tr/>;
 	};
+
+	useEffect(() => {
+		if (titleOutside) setFilter("title", titleOutside);
+		if (completedOutside) setFilter("completed", completedOutside);
+	}, [titleOutside]);
 
 	return (
 		<>
@@ -65,10 +70,7 @@ export const Table = ({children, data, columns, className, initialState}: TableP
 									    className="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
 									    {...column.getHeaderProps()}
 									    data-testid={`table__th--${thIndex}`}
-									>{column.render("Header")}
-										{/* Render the columns filter UI */}
-										<div>{column.canFilter ? column.render('Filter') : null}</div>
-									</th>
+									>{column.render("Header")}</th>
 								))}
 							</tr>
 						))}
