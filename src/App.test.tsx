@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import {Todos} from './component/Todos';
 
-test('renders without crashing', () => {
-    render(<App />);
-    const title = screen.getByText(/Todos/i);
-    expect(title).toBeInTheDocument();
+it("should match snapshot", () => {
+    const {container} = render(<App/>);
+    expect(container).toMatchSnapshot();
 });
