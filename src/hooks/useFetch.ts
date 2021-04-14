@@ -13,7 +13,7 @@ export const useFetch = (setLoading: Function) => {
 			setLoading(true);
 			const response = await httpClient.get(`${todosBaseUrl}`);
 			if (response) {
-				setTodos([]);
+				setTodos(response);
 			}
 			setLoading(false);
 		};
