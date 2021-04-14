@@ -1,7 +1,10 @@
+import {SelectColumnFilter} from '../Table/filter/SelectColumnFilter';
+
 export const tableColumns = [
 	{
 		Header: '#',
-		accessor: 'id'
+		accessor: 'id',
+		disableFilters: true
 	},
 	{
 		Header: 'Title',
@@ -11,5 +14,6 @@ export const tableColumns = [
 	{
 		Header: 'Completed',
 		accessor: 'completed',
+		Filter: SelectColumnFilter,
 	}
 ];
