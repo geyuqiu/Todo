@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableRow should render with border 1`] = `
-<div>
+<DocumentFragment>
   <table>
     <tbody>
       <tr>
@@ -9,7 +9,7 @@ exports[`TableRow should render with border 1`] = `
           class="border-gray-lightest border"
         >
           <div
-            class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+            class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
           >
             1
           </div>
@@ -17,5 +17,5 @@ exports[`TableRow should render with border 1`] = `
       </tr>
     </tbody>
   </table>
-</div>
+</DocumentFragment>
 `;

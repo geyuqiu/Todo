@@ -32,7 +32,7 @@ const columns = [
 
 describe("Table", () => {
 	it("should render", () => {
-		const {container} = render(
+		const {asFragment} = render(
 			<Table columns={columns} data={data}>
 				{() => (
 					<tr>
@@ -42,7 +42,7 @@ describe("Table", () => {
 				)}
 			</Table>
 		);
-		expect(container).toMatchSnapshot();
+		expect(asFragment()).toMatchSnapshot();
 	});
 
 	it("should render empty rows if template not provided", () => {

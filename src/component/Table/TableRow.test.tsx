@@ -6,7 +6,7 @@ import {TableCell} from './TableCell';
 
 describe("TableRow", () => {
 	it("should render with border", () => {
-		const { container } = render(
+		const {asFragment} = render(
 			<table>
 				<tbody>
 					<TableRow border={true}>
@@ -17,11 +17,11 @@ describe("TableRow", () => {
 				</tbody>
 			</table>,
 		);
-		expect(container).toMatchSnapshot();
+		expect(asFragment()).toMatchSnapshot();
 	});
 
 	it("should render without border", () => {
-		const { container } = render(
+		const {asFragment} = render(
 			<table>
 				<tbody>
 					<TableRow border={false} >
@@ -32,6 +32,6 @@ describe("TableRow", () => {
 				</tbody>
 			</table>,
 		);
-		expect(container).toMatchSnapshot();
+		expect(asFragment()).toMatchSnapshot();
 	});
 });
