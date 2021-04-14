@@ -9,8 +9,6 @@ type Props = {
 export const DefaultColumnFilter = ({
    column: {filterValue, preFilteredRows, setFilter},
  }: Props) => {
-	const count = preFilteredRows.length
-
 	return (
 		<input
 			value={filterValue || ''}
