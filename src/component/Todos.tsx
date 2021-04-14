@@ -9,8 +9,6 @@ export const Todos = () => {
 	const {todos} = useFetch(setLoading);
 
 	return (
-		<>
-			<TodoTable todos={todos} isLoading={isLoading}/>
-		</>
+		<TodoTable todos={todos} isLoading={isLoading}/>
 	);
 };
