@@ -29,9 +29,7 @@ exports[`Row should match snapshot 1`] = `
     >
       <div
         class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
-      >
-        false
-      </div>
+      />
     </td>
   </tr>
 </div>

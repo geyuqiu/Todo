@@ -2,38 +2,13 @@ import {render} from "@testing-library/react";
 import React from "react";
 
 import {Table} from "./Table";
-
-const data = [
-	{
-		col1: "column 1",
-		col2: "column 2",
-		col3: "column 3",
-	},
-];
-
-const columns = [
-	{
-		Header: "Header 1",
-		accessor: "col1",
-		minimumWidth: true,
-		className: "flex-row-reverse",
-	},
-	{
-		Header: "Header 2",
-		accessor: "col2",
-		className: "no-border",
-	},
-	{
-		Header: "Header 3",
-		accessor: "col3",
-		className: "justify-end",
-	}
-];
+import {tableColumns} from '../Row/TableColumns';
+import {todos} from '../TodoTable/TodoTable.test';
 
 describe("Table", () => {
 	it("should render", () => {
 		const {asFragment} = render(
-			<Table columns={columns} data={data}>
+			<Table columns={tableColumns} data={todos}>
 				{() => (
 					<tr>
 						<td>1</td>
@@ -46,7 +21,7 @@ describe("Table", () => {
 	});
 
 	it("should render empty rows if template not provided", () => {
-		const {container} = render(<Table columns={columns} data={data}/>);
+		const {container} = render(<Table columns={tableColumns} data={todos}/>);
 		expect(container).toMatchSnapshot();
 	});
 });

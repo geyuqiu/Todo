@@ -21,7 +21,7 @@ exports[`Table should render 1`] = `
             data-testid="table__th--0"
             role="columnheader"
           >
-            Header 1
+            #
           </th>
           <th
             class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -29,7 +29,7 @@ exports[`Table should render 1`] = `
             data-testid="table__th--1"
             role="columnheader"
           >
-            Header 2
+            Title
           </th>
           <th
             class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -37,13 +37,37 @@ exports[`Table should render 1`] = `
             data-testid="table__th--2"
             role="columnheader"
           >
-            Header 3
+            Completed
           </th>
         </tr>
       </thead>
       <tbody
         role="rowgroup"
       >
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            2
+          </td>
+        </tr>
         <tr>
           <td>
             1
@@ -79,7 +103,7 @@ exports[`Table should render empty rows if template not provided 1`] = `
             data-testid="table__th--0"
             role="columnheader"
           >
-            Header 1
+            #
           </th>
           <th
             class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -87,7 +111,7 @@ exports[`Table should render empty rows if template not provided 1`] = `
             data-testid="table__th--1"
             role="columnheader"
           >
-            Header 2
+            Title
           </th>
           <th
             class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
@@ -95,7 +119,7 @@ exports[`Table should render empty rows if template not provided 1`] = `
             data-testid="table__th--2"
             role="columnheader"
           >
-            Header 3
+            Completed
           </th>
         </tr>
       </thead>
@@ -103,8 +127,317 @@ exports[`Table should render empty rows if template not provided 1`] = `
         role="rowgroup"
       >
         <tr />
+        <tr />
+        <tr />
+        <tr />
       </tbody>
     </table>
   </div>
 </div>
+`;
+
+exports[`TodoTable NoResults should match snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="bg-error p-4"
+    data-testid="Table__No_Results"
+  >
+    No result for the given search parameters!
+  </p>
+</DocumentFragment>
+`;
+
+exports[`TodoTable display n todos should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-6 mr-3 sm:mx-8 pt-12"
+  >
+    <h1
+      class="font-bold mb-3"
+    >
+      Todos
+    </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+      <select>
+        <option
+          value=""
+        >
+          -
+        </option>
+        <option
+          value="yes"
+        >
+          yes
+        </option>
+        <option
+          value="no"
+        >
+          no
+        </option>
+      </select>
+    </div>
+    <div
+      class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
+      role="table"
+    >
+      <table
+        cellpadding="0"
+        class="table-auto"
+      >
+        <thead>
+          <tr
+            class="border"
+            role="row"
+          >
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--0"
+              role="columnheader"
+            >
+              #
+            </th>
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--1"
+              role="columnheader"
+            >
+              Title
+            </th>
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--2"
+              role="columnheader"
+            >
+              Completed
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          role="rowgroup"
+        >
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                1
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                title 1
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                yes
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                2
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                title 2
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                yes
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                3
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                title 3
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                yes
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                4
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                delectus aut autem
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
+              >
+                no
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TodoTable isLoading should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-6 mr-3 sm:mx-8 pt-12"
+  >
+    <h1
+      class="font-bold mb-3"
+    >
+      Todos
+    </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+      <select>
+        <option
+          value=""
+        >
+          -
+        </option>
+        <option
+          value="yes"
+        >
+          yes
+        </option>
+        <option
+          value="no"
+        >
+          no
+        </option>
+      </select>
+    </div>
+    <p
+      data-testid="Table__Loading"
+    >
+      Loading ...
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TodoTable todos empty for selected address should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ml-6 mr-3 sm:mx-8 pt-12"
+  >
+    <h1
+      class="font-bold mb-3"
+    >
+      Todos
+    </h1>
+    <div>
+      <input
+        placeholder="keyword..."
+        value=""
+      />
+      <select>
+        <option
+          value=""
+        >
+          -
+        </option>
+        <option
+          value="yes"
+        >
+          yes
+        </option>
+        <option
+          value="no"
+        >
+          no
+        </option>
+      </select>
+    </div>
+    <p
+      class="bg-error p-4"
+      data-testid="Table__No_Results"
+    >
+      No result for the given search parameters!
+    </p>
+  </div>
+</DocumentFragment>
 `;

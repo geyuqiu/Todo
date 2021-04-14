@@ -3,6 +3,29 @@ import React from "react";
 
 import {NoResults, TodoTable} from "./TodoTable";
 
+export const todos = [
+	{
+		id: 1,
+		title: "title 1",
+		completed: 'yes'
+	},
+	{
+		id: 2,
+		title: "title 2",
+		completed: 'yes'
+	},
+	{
+		id: 3,
+		title: "title 3",
+		completed: 'yes'
+	},
+	{
+		id: 4,
+		title: "delectus aut autem",
+		completed: 'no'
+	}
+];
+
 describe("TodoTable", () => {
 	it("NoResults should match snapshot", () => {
 		const {getAllByTestId, asFragment} = render(<NoResults/>);
@@ -25,28 +48,6 @@ describe("TodoTable", () => {
 	});
 
 	it("display n todos should match snapshot", () => {
-		const todos = [
-			{
-				id: 1,
-				title: "title 1",
-				completed: true
-			},
-			{
-				id: 2,
-				title: "title 2",
-				completed: false
-			},
-			{
-				id: 3,
-				title: "title 3",
-				completed: true
-			},
-			{
-				id: 4,
-				title: "delectus aut autem",
-				completed: false
-			}
-		];
 		const {getAllByTestId, asFragment} = render(<TodoTable
 			todos={todos} isLoading={false}
 		/>);
