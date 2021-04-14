@@ -8,8 +8,8 @@ type TableProps = {
 }
 
 export const Filters = ({title, completed, setTitle, setCompleted}: TableProps) => (
-	<div className="flex justify-between sm:flex-row flex-col mb-6">
-		<div className="flex justify-between mb-3 items-center">
+	<div className="flex sm:flex-row flex-col mb-6">
+		<div className="flex justify-between mb-3 sm:mb-0 items-center w-full">
 			<label>Search: </label>
 			<input value={title} placeholder={'keyword...'} className="w-full ml-3 p-2 border-gray-dark border"
 			       onChange={(e: any) => {
@@ -17,7 +17,7 @@ export const Filters = ({title, completed, setTitle, setCompleted}: TableProps) 
 			       }}
 			/>
 		</div>
-		<div className="flex justify-between items-center">
+		<div className="flex justify-between items-center w-full sm:ml-3">
 			<label>Completed: </label>
 			<select className="w-full ml-3 p-2 border-gray-dark bg-white border"
 				value={completed}
