@@ -11,9 +11,11 @@ type TableProps = {
 }
 
 export const TodoTable = ({todos, isLoading}: TableProps) => (
-	<div className="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12">
+	<div className="ml-6 mr-3 sm:mx-8 pt-12">
 		{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
-		{!isLoading && !todos?.length && <p data-testid="Table__No_Results">No elements were found!</p>}
+		{!isLoading && !todos?.length &&
+		<NoResults/>
+		}
 		{!isLoading && todos?.length > 0 &&
 		<Table columns={tableColumns} data={todos}>
 			{(todo: Todo) => (
@@ -23,3 +25,7 @@ export const TodoTable = ({todos, isLoading}: TableProps) => (
 		}
 	</div>
 );
+
+export const NoResults = () =>
+	<p data-testid="Table__No_Results" className="bg-error p-4">No result for the given
+	search parameters!</p>

@@ -1,9 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TodoTable NoResults should match snapshot 1`] = `
+<div>
+  <p
+    class="bg-error p-4"
+    data-testid="Table__No_Results"
+  >
+    No result for the given search parameters!
+  </p>
+</div>
+`;
+
 exports[`TodoTable display n todos should match snapshot 1`] = `
 <div>
   <div
-    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+    class="ml-6 mr-3 sm:mx-8 pt-12"
   >
     <div
       class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
@@ -185,7 +196,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
 exports[`TodoTable isLoading should match snapshot 1`] = `
 <div>
   <div
-    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+    class="ml-6 mr-3 sm:mx-8 pt-12"
   >
     <p
       data-testid="Table__Loading"
@@ -199,12 +210,13 @@ exports[`TodoTable isLoading should match snapshot 1`] = `
 exports[`TodoTable todos empty for selected address should match snapshot 1`] = `
 <div>
   <div
-    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+    class="ml-6 mr-3 sm:mx-8 pt-12"
   >
     <p
+      class="bg-error p-4"
       data-testid="Table__No_Results"
     >
-      No elements were found!
+      No result for the given search parameters!
     </p>
   </div>
 </div>

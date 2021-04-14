@@ -1,9 +1,15 @@
 import {render} from "@testing-library/react";
 import React from "react";
 
-import {TodoTable} from "./TodoTable";
+import {NoResults, TodoTable} from "./TodoTable";
 
 describe("TodoTable", () => {
+	it("NoResults should match snapshot", () => {
+		const {getAllByTestId, container} = render(<NoResults/>);
+		expect(getAllByTestId("Table__No_Results")).toHaveLength(1);
+		expect(container).toMatchSnapshot();
+	});
+
 	it("isLoading should match snapshot", () => {
 		const {getAllByTestId, container} = render(<TodoTable isLoading/>);
 		expect(getAllByTestId("Table__Loading")).toHaveLength(1);
@@ -48,5 +54,4 @@ describe("TodoTable", () => {
 		expect(getAllByTestId("TableRow")).toHaveLength(4);
 		expect(container).toMatchSnapshot();
 	});
-
 });
