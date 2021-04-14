@@ -5,7 +5,7 @@ npm i
 npm start
 
 npm test
-npm run build
+npm run build && netlify deploy  --prod
 ```
 
 app requires a node version of 14 and different dependencies which hackerank web platform is not compatible with. 
