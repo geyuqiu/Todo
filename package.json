@@ -18,7 +18,7 @@
   "scripts": {
     "start": "PORT=8000 craco start",
     "build": "craco build",
-    "test": "node_modules/@craco/craco/bin/craco.js test",
+    "test": "npm test -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
