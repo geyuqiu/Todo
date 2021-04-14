@@ -5,6 +5,11 @@ exports[`WalletView should match snapshot 1`] = `
   <div
     class="ml-6 mr-3 sm:mx-8 pt-12"
   >
+    <h1
+      class="font-bold mb-3"
+    >
+      Todos
+    </h1>
     <p
       data-testid="Table__Loading"
     >

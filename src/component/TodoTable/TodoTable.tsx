@@ -12,6 +12,7 @@ type TableProps = {
 
 export const TodoTable = ({todos, isLoading}: TableProps) => (
 	<div className="ml-6 mr-3 sm:mx-8 pt-12">
+		<h1 className="font-bold mb-3">Todos</h1>
 		{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
 		{!isLoading && !todos?.length &&
 		<NoResults/>
