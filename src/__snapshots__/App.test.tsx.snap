@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-<div>
+<DocumentFragment>
   <div
     class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
   >
@@ -11,5 +11,5 @@ exports[`should match snapshot 1`] = `
       Loading ...
     </p>
   </div>
-</div>
+</DocumentFragment>
 `;
