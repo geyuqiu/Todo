@@ -157,28 +157,47 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
     >
       Todos
     </h1>
-    <div>
-      <input
-        placeholder="keyword..."
-        value=""
-      />
-      <select>
-        <option
+    <div
+      class="flex sm:flex-row flex-col mb-6"
+    >
+      <div
+        class="flex justify-between mb-3 sm:mb-0 items-center w-full"
+      >
+        <label>
+          Search: 
+        </label>
+        <input
+          class="w-full ml-3 p-2 border-gray-dark border"
+          placeholder="keyword..."
           value=""
+        />
+      </div>
+      <div
+        class="flex justify-between items-center w-full sm:ml-3"
+      >
+        <label>
+          Completed: 
+        </label>
+        <select
+          class="w-full ml-3 p-2 border-gray-dark bg-white border"
         >
-          -
-        </option>
-        <option
-          value="yes"
-        >
-          yes
-        </option>
-        <option
-          value="no"
-        >
-          no
-        </option>
-      </select>
+          <option
+            value=""
+          >
+            -
+          </option>
+          <option
+            value="yes"
+          >
+            yes
+          </option>
+          <option
+            value="no"
+          >
+            no
+          </option>
+        </select>
+      </div>
     </div>
     <div
       class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
@@ -367,28 +386,47 @@ exports[`TodoTable isLoading should match snapshot 1`] = `
     >
       Todos
     </h1>
-    <div>
-      <input
-        placeholder="keyword..."
-        value=""
-      />
-      <select>
-        <option
+    <div
+      class="flex sm:flex-row flex-col mb-6"
+    >
+      <div
+        class="flex justify-between mb-3 sm:mb-0 items-center w-full"
+      >
+        <label>
+          Search: 
+        </label>
+        <input
+          class="w-full ml-3 p-2 border-gray-dark border"
+          placeholder="keyword..."
           value=""
+        />
+      </div>
+      <div
+        class="flex justify-between items-center w-full sm:ml-3"
+      >
+        <label>
+          Completed: 
+        </label>
+        <select
+          class="w-full ml-3 p-2 border-gray-dark bg-white border"
         >
-          -
-        </option>
-        <option
-          value="yes"
-        >
-          yes
-        </option>
-        <option
-          value="no"
-        >
-          no
-        </option>
-      </select>
+          <option
+            value=""
+          >
+            -
+          </option>
+          <option
+            value="yes"
+          >
+            yes
+          </option>
+          <option
+            value="no"
+          >
+            no
+          </option>
+        </select>
+      </div>
     </div>
     <p
       data-testid="Table__Loading"
@@ -409,28 +447,47 @@ exports[`TodoTable todos empty for selected address should match snapshot 1`] = 
     >
       Todos
     </h1>
-    <div>
-      <input
-        placeholder="keyword..."
-        value=""
-      />
-      <select>
-        <option
+    <div
+      class="flex sm:flex-row flex-col mb-6"
+    >
+      <div
+        class="flex justify-between mb-3 sm:mb-0 items-center w-full"
+      >
+        <label>
+          Search: 
+        </label>
+        <input
+          class="w-full ml-3 p-2 border-gray-dark border"
+          placeholder="keyword..."
           value=""
+        />
+      </div>
+      <div
+        class="flex justify-between items-center w-full sm:ml-3"
+      >
+        <label>
+          Completed: 
+        </label>
+        <select
+          class="w-full ml-3 p-2 border-gray-dark bg-white border"
         >
-          -
-        </option>
-        <option
-          value="yes"
-        >
-          yes
-        </option>
-        <option
-          value="no"
-        >
-          no
-        </option>
-      </select>
+          <option
+            value=""
+          >
+            -
+          </option>
+          <option
+            value="yes"
+          >
+            yes
+          </option>
+          <option
+            value="no"
+          >
+            no
+          </option>
+        </select>
+      </div>
     </div>
     <p
       class="bg-error p-4"

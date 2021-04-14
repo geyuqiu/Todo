@@ -51,10 +51,10 @@ export const Table = ({children, data, columns, className, titleOutside, complet
 					<table cellPadding={0} className="table-auto">
 						<thead>
 						{headerGroups.map((headerGroup: any, index: number) => (
-							<tr className="border" key={index} {...headerGroup.getHeaderGroupProps()}>
+							<tr key={index} {...headerGroup.getHeaderGroupProps()}>
 								{headerGroup.headers.map((column: any, thIndex: number) => (
 									<th key={thIndex}
-									    className="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
+									    className="group border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
 									    {...column.getHeaderProps()}
 									    data-testid={`table__th--${thIndex}`}
 									>{column.render("Header")}</th>

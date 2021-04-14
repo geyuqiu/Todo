@@ -16,7 +16,7 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 	const [completed, setCompleted] = useState<string>("");
 	return (
 		<div className="ml-6 mr-3 sm:mx-8 pt-12">
-			<h1 className="font-bold mb-3">Todos</h1>
+			<h1 className="font-black mb-4 text-3xl">Todos</h1>
 			<Filters title={title} completed={completed} setTitle={setTitle} setCompleted={setCompleted}/>
 			{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
 			{!isLoading && !todos?.length &&
@@ -36,5 +36,5 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 }
 
 export const NoResults = () =>
-	<p data-testid="Table__No_Results" className="bg-error p-4">No result for the given
+	<p data-testid="Table__No_Results" className="bg-error p-4 text-white">No result for the given
 	search parameters!</p>
