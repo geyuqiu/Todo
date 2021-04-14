@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TodoTable NoResults should match snapshot 1`] = `
-<div>
+<DocumentFragment>
   <p
     class="bg-error p-4"
     data-testid="Table__No_Results"
   >
     No result for the given search parameters!
   </p>
-</div>
+</DocumentFragment>
 `;
 
 exports[`TodoTable display n todos should match snapshot 1`] = `
-<div>
+<DocumentFragment>
   <div
     class="ml-6 mr-3 sm:mx-8 pt-12"
   >
@@ -66,7 +66,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 1
               </div>
@@ -75,7 +75,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 title 1
               </div>
@@ -84,7 +84,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 true
               </div>
@@ -98,7 +98,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 2
               </div>
@@ -107,7 +107,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 title 2
               </div>
@@ -116,7 +116,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 false
               </div>
@@ -130,7 +130,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 3
               </div>
@@ -139,7 +139,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 title 3
               </div>
@@ -148,7 +148,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 true
               </div>
@@ -162,7 +162,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 4
               </div>
@@ -171,7 +171,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 delectus aut autem
               </div>
@@ -180,7 +180,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 dwniYi"
               >
                 false
               </div>
@@ -190,11 +190,11 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
       </table>
     </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`TodoTable isLoading should match snapshot 1`] = `
-<div>
+<DocumentFragment>
   <div
     class="ml-6 mr-3 sm:mx-8 pt-12"
   >
@@ -204,11 +204,11 @@ exports[`TodoTable isLoading should match snapshot 1`] = `
       Loading ...
     </p>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`TodoTable todos empty for selected address should match snapshot 1`] = `
-<div>
+<DocumentFragment>
   <div
     class="ml-6 mr-3 sm:mx-8 pt-12"
   >
@@ -219,5 +219,5 @@ exports[`TodoTable todos empty for selected address should match snapshot 1`] = 
       No result for the given search parameters!
     </p>
   </div>
-</div>
+</DocumentFragment>
 `;

@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {httpClient} from "../services/HttpClient";
 import {Todo} from '../component/Row/model';
 
-const todosBaseUrl = 'https://jsonplaceholder.typicode.com/todos';
+const todosBaseUrl = 'https://jsonplaceholder.typicode.com/users/1/todos';
 
 export const useFetch = (setLoading: Function) => {
 
