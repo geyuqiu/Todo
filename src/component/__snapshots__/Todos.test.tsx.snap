@@ -15,6 +15,23 @@ exports[`WalletView should match snapshot 1`] = `
         placeholder="keyword..."
         value=""
       />
+      <select>
+        <option
+          value=""
+        >
+          -
+        </option>
+        <option
+          value="yes"
+        >
+          yes
+        </option>
+        <option
+          value="no"
+        >
+          no
+        </option>
+      </select>
     </div>
     <p
       data-testid="Table__Loading"

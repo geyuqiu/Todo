@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters NoResults should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      placeholder="keyword..."
+      value=""
+    />
+    <select>
+      <option
+        value=""
+      >
+        -
+      </option>
+      <option
+        value="yes"
+      >
+        yes
+      </option>
+      <option
+        value="no"
+      >
+        no
+      </option>
+    </select>
+  </div>
+</DocumentFragment>
+`;

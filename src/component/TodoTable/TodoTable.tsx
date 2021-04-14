@@ -4,6 +4,7 @@ import {tableColumns} from '../Row/TableColumns';
 import {Row} from '../Row/Row';
 import {Table} from '../Table/Table';
 import {Todo} from '../Row/model';
+import {Filters} from '../Filters/Filters';
 
 type TableProps = {
 	todos: Todo[];
@@ -16,26 +17,7 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 	return (
 		<div className="ml-6 mr-3 sm:mx-8 pt-12">
 			<h1 className="font-bold mb-3">Todos</h1>
-			<div>
-				<input value={title} placeholder={'keyword...'}
-					onChange={(e: any) => {
-						setTitle(e.target.value || undefined);
-					}}
-				/>
-				<select
-					value={completed}
-					onChange={(e: any) => {
-						setCompleted(e.target.value || undefined)
-					}}
-				>
-					<option value="">-</option>
-					{['yes', 'no'].map((option: string, i: number) => (
-						<option key={i} value={option}>
-							{option}
-						</option>
-					))}
-				</select>
-			</div>
+			<Filters title={title} completed={completed} setTitle={setTitle} setCompleted={setCompleted}/>
 			{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
 			{!isLoading && !todos?.length &&
 			<NoResults/>
