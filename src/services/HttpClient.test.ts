@@ -15,7 +15,7 @@ describe("HttpClient", () => {
 		const responseBody = {
 			args: {},
 			origin: "origin",
-			url: "http://httpbin.org/get",
+			url: "http://httpbin.org/get"
 		};
 
 		nock("http://httpbin.org/").get("/get").reply(200, responseBody);
