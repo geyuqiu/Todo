@@ -10,7 +10,6 @@ type TableProps = {
 	className?: string;
 	data: any[];
 	columns: any[];
-	initialState?: Record<string, any>;
 	titleOutside?: string;
 	completedOutside?: string;
 };
