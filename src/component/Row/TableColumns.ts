@@ -1,14 +1,15 @@
 export const tableColumns = [
 	{
-		Header: 'id',
+		Header: '#',
 		accessor: 'id'
 	},
 	{
-		Header: 'title',
+		Header: 'Title',
 		accessor: 'title',
+		className: "text-right"
 	},
 	{
-		Header: 'completed',
+		Header: 'Completed',
 		accessor: 'completed',
 	}
 ];

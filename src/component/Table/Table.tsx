@@ -17,13 +17,10 @@ const TableWrapper = styled.div`
 `;
 
 export const Table = ({children, data, columns, className, initialState}: TableProps) => {
-	const tableData = useMemo(() => data, [data]);
-	const tableColumns = useMemo(() => columns, [columns]);
-
 	const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = useTable(
 		{
-			data: tableData,
-			columns: tableColumns,
+			data: useMemo(() => data, [data]),
+			columns: useMemo(() => columns, [columns]),
 			initialState,
 		} as TableOptions<any>
 	);
@@ -43,7 +40,7 @@ export const Table = ({children, data, columns, className, initialState}: TableP
 						<tr className="border" key={index} {...headerGroup.getHeaderGroupProps()}>
 							{headerGroup.headers.map((column: any, thIndex: number) => (
 								<th key={thIndex}
-									className="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+									className="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
 									{...column.getHeaderProps()}
 									data-testid={`table__th--${thIndex}`}
 								>{column.render("Header")}</th>

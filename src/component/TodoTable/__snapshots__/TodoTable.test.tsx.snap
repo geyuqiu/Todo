@@ -19,28 +19,28 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
             role="row"
           >
             <th
-              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
               colspan="1"
               data-testid="table__th--0"
               role="columnheader"
             >
-              id
+              #
             </th>
             <th
-              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
               colspan="1"
               data-testid="table__th--1"
               role="columnheader"
             >
-              title
+              Title
             </th>
             <th
-              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              class="group border border-gray-lightest bg-gray-dark text-base text-center select-none m-0 p-3 md:px-5 font-semibold"
               colspan="1"
               data-testid="table__th--2"
               role="columnheader"
             >
-              completed
+              Completed
             </th>
           </tr>
         </thead>
@@ -55,7 +55,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 1
               </div>
@@ -64,7 +64,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 title 1
               </div>
@@ -73,7 +73,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 true
               </div>
@@ -87,7 +87,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 2
               </div>
@@ -96,7 +96,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 title 2
               </div>
@@ -105,7 +105,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 false
               </div>
@@ -119,7 +119,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 3
               </div>
@@ -128,7 +128,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 title 3
               </div>
@@ -137,7 +137,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 true
               </div>
@@ -151,7 +151,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 4
               </div>
@@ -160,7 +160,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 delectus aut autem
               </div>
@@ -169,7 +169,7 @@ exports[`TodoTable display n todos should match snapshot 1`] = `
               class="border-gray-lightest border"
             >
               <div
-                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
               >
                 false
               </div>

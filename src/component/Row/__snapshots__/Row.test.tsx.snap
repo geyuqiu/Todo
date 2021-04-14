@@ -10,7 +10,7 @@ exports[`Row should match snapshot 1`] = `
       class="border-gray-lightest border"
     >
       <div
-        class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+        class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
       >
         1
       </div>
@@ -19,7 +19,7 @@ exports[`Row should match snapshot 1`] = `
       class="border-gray-lightest border"
     >
       <div
-        class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+        class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
       >
         delectus aut autem
       </div>
@@ -28,7 +28,7 @@ exports[`Row should match snapshot 1`] = `
       class="border-gray-lightest border"
     >
       <div
-        class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+        class="TableCell__TableCellInnerWrapper-l6uokn-0 BHpwz"
       >
         false
       </div>
