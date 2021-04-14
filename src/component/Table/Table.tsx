@@ -37,11 +37,11 @@ export const Table = ({children, data, columns, className, titleOutside, complet
 	};
 
 	useEffect(() => {
-		if (titleOutside) setFilter("title", titleOutside);
+		setFilter("title", titleOutside);
 	}, [titleOutside]);
 
 	useEffect(() => {
-		if (completedOutside) setFilter("completed", completedOutside);
+		setFilter("completed", completedOutside);
 	}, [completedOutside]);
 
 	return (
