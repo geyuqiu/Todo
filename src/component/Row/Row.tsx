@@ -21,9 +21,8 @@ export const Row = ({todo: todo}: RowProps) => {
 			</TableCell>
 
 			<TableCell>
-				{String(todo.completed)}
+				{todo.completed ? 'yes' : 'no'}
 			</TableCell>
-
 		</TableRow>
 	);
 }
