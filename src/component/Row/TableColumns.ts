@@ -1,19 +1,14 @@
-import {SelectColumnFilter} from '../Table/filter/SelectColumnFilter';
-
 export const tableColumns = [
 	{
 		Header: '#',
-		accessor: 'id',
-		disableFilters: true
+		accessor: 'id'
 	},
 	{
 		Header: 'Title',
-		accessor: 'title',
-		className: "text-right"
+		accessor: 'title'
 	},
 	{
 		Header: 'Completed',
-		accessor: 'completed',
-		Filter: SelectColumnFilter,
+		accessor: 'completed'
 	}
 ];

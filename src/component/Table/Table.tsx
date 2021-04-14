@@ -19,28 +19,13 @@ const TableWrapper = styled.div`
 	${tableStyle}
 `;
 
-export const Table = ({children, data, columns, className, initialState, titleOutside, completedOutside}: TableProps) => {
-	const filterTypes = React.useMemo(() => ({
-		text: (rows: any, id: any, filterValue: any) => {
-			return rows.filter((row: any) => {
-				const rowValue = row.values[id]
-				return rowValue !== undefined
-					? String(rowValue)
-						.toLowerCase()
-						.startsWith(String(filterValue).toLowerCase())
-					: true
-			})
-		},
-	}), [])
-
+export const Table = ({children, data, columns, className, titleOutside, completedOutside}: TableProps) => {
 	const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,
 		// @ts-ignore
 		setFilter} = useTable(
 		{
 			data: useMemo(() => data, [data]),
-			columns: useMemo(() => columns, [columns]),
-			initialState,
-			filterTypes
+			columns: useMemo(() => columns, [columns])
 		} as TableOptions<any>, useFilters
 	);
 
