@@ -12,6 +12,7 @@ type TableProps = {
 
 export const TodoTable = ({todos, isLoading}: TableProps) => {
 	const [title, setTitle] = useState<string>("");
+	const [completed, setCompleted] = useState<string>("");
 	return (
 		<div className="ml-6 mr-3 sm:mx-8 pt-12">
 			<h1 className="font-bold mb-3">Todos</h1>
@@ -21,6 +22,19 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 						setTitle(e.target.value || undefined);
 					}}
 				/>
+				<select
+					value={completed}
+					onChange={(e: any) => {
+						setCompleted(e.target.value || undefined)
+					}}
+				>
+					<option value="">-</option>
+					{['yes', 'no'].map((option: string, i: number) => (
+						<option key={i} value={option}>
+							{option}
+						</option>
+					))}
+				</select>
 			</div>
 			{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
 			{!isLoading && !todos?.length &&
@@ -28,7 +42,7 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 			}
 			{!isLoading && todos?.length > 0 &&
 			<Table columns={tableColumns} data={todos}
-						 titleOutside={title}
+						 titleOutside={title} completedOutside={completed}
 			>
 				{(todo: Todo) => (
 					<Row todo={todo}/>

@@ -12,7 +12,7 @@ type TableProps = {
 	columns: any[];
 	initialState?: Record<string, any>;
 	titleOutside?: string;
-	completedOutside?: boolean;
+	completedOutside?: string;
 };
 
 const TableWrapper = styled.div`
@@ -53,8 +53,11 @@ export const Table = ({children, data, columns, className, initialState, titleOu
 
 	useEffect(() => {
 		if (titleOutside) setFilter("title", titleOutside);
-		if (completedOutside) setFilter("completed", completedOutside);
 	}, [titleOutside]);
+
+	useEffect(() => {
+		if (completedOutside) setFilter("completed", completedOutside);
+	}, [completedOutside]);
 
 	return (
 		<>
