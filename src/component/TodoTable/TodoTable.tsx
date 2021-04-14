@@ -15,7 +15,7 @@ export const TodoTable = ({todos, isLoading}: TableProps) => {
 	const [title, setTitle] = useState<string>("");
 	const [completed, setCompleted] = useState<string>("");
 	return (
-		<div className="ml-6 mr-3 sm:mx-8 pt-12">
+		<div className="ml-6 mr-3 sm:mx-8 pt-12 max-w-screen-xl">
 			<h1 className="font-black mb-4 text-3xl">Todos</h1>
 			<Filters title={title} completed={completed} setTitle={setTitle} setCompleted={setCompleted}/>
 			{(isLoading) && <p data-testid="Table__Loading">Loading ...</p>}
