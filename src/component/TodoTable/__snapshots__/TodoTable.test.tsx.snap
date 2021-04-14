@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoTable display n todos should match snapshot 1`] = `
+<div>
+  <div
+    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+  >
+    <div
+      class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
+      role="table"
+    >
+      <table
+        cellpadding="0"
+        class="table-auto"
+      >
+        <thead>
+          <tr
+            class="border"
+            role="row"
+          >
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--0"
+              role="columnheader"
+            >
+              id
+            </th>
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--1"
+              role="columnheader"
+            >
+              title
+            </th>
+            <th
+              class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+              colspan="1"
+              data-testid="table__th--2"
+              role="columnheader"
+            >
+              completed
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          role="rowgroup"
+        >
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                1
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                title 1
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                true
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                2
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                title 2
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                false
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                3
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                title 3
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                true
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="TableRow__TableRowStyled-sc-990v33-0 iJGVRV"
+            data-testid="TableRow"
+          >
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                4
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                delectus aut autem
+              </div>
+            </td>
+            <td
+              class="border-gray-lightest border"
+            >
+              <div
+                class="TableCell__TableCellInnerWrapper-l6uokn-0 eCVNme"
+              >
+                false
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoTable isLoading should match snapshot 1`] = `
+<div>
+  <div
+    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+  >
+    <p
+      data-testid="Table__Loading"
+    >
+      Loading ...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TodoTable todos empty for selected address should match snapshot 1`] = `
+<div>
+  <div
+    class="ml-6 mr-3 sm:mx-8 sm:flex sm:justify-center pt-12"
+  >
+    <p
+      data-testid="Table__No_Results"
+    >
+      No elements were found!
+    </p>
+  </div>
+</div>
+`;

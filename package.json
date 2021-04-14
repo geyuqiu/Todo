@@ -19,7 +19,7 @@
     "start": "PORT=8000 craco start",
     "build": "craco build",
     "test": "react-scripts test --coverage --watchAll=false -u",
-    "test:watch": "react-scripts test",
+    "test:watch": "react-scripts test -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render 1`] = `
+<div>
+  <div
+    class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
+    role="table"
+  >
+    <table
+      cellpadding="0"
+      class="table-auto"
+    >
+      <thead>
+        <tr
+          class="border"
+          role="row"
+        >
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--0"
+            role="columnheader"
+          >
+            Header 1
+          </th>
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--1"
+            role="columnheader"
+          >
+            Header 2
+          </th>
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--2"
+            role="columnheader"
+          >
+            Header 3
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        role="rowgroup"
+      >
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            2
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Table should render empty rows if template not provided 1`] = `
+<div>
+  <div
+    class="Table__TableWrapper-xscllg-0 gqOIbh w-full max-w-screen-xl"
+    role="table"
+  >
+    <table
+      cellpadding="0"
+      class="table-auto"
+    >
+      <thead>
+        <tr
+          class="border"
+          role="row"
+        >
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--0"
+            role="columnheader"
+          >
+            Header 1
+          </th>
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--1"
+            role="columnheader"
+          >
+            Header 2
+          </th>
+          <th
+            class="group border border-gray-lightest bg-gray-dark text-base text-left select-none m-0 p-3 md:px-5 font-semibold"
+            colspan="1"
+            data-testid="table__th--2"
+            role="columnheader"
+          >
+            Header 3
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        role="rowgroup"
+      >
+        <tr />
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
